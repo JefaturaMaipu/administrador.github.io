@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor del título */
+.contenedor_titulo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contenedor_titulo h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Contenedor de los botones */
+.contenedor_botones {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Estilo de los botones */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  background-color: #2980b9;
+}
