@@ -4,18 +4,18 @@ const armamento = document.getElementById('armamento');
 const chaleco = document.getElementById('chaleco');
 
 listado.addEventListener('click', () =>  {
-    window.location.href = '../public/tabla.html'
+    window.location.href = './tabla.html'
 });
 
 efectivo.addEventListener('click', () =>  {
-    window.location.href = '../public/formulario.html'
+    window.location.href = './formulario.html'
 });
 
 armamento.addEventListener('click', () => {
-    window.location.href = '../public/armamento.html'
+    window.location.href = './armamento.html'
 });
 
 chaleco.addEventListener('click', () => {
-    window.location.href = '../public/chaleco.html'
+    window.location.href = './chaleco.html'
 });
 
