@@ -16,7 +16,7 @@ function leerExcel(rutaArchivo) {
 // Ruta para obtener todos los datos
 router.get('/', (req, res) => {
     try {
-        const rutaExcel = path.join(__dirname, './Excel/RP 2100.xlsx'); // Ruta del archivo
+        const rutaExcel = path.join(__dirname, './public/RP 2100.xlsx'); // Ruta del archivo
         const datos = leerExcel(rutaExcel);
         res.json(datos);
     } catch (error) {
@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 router.get('/:legajo', (req, res) => {
     try {
         const legajo = parseInt(req.params.legajo);
-        const rutaExcel = path.join(__dirname, './Excel/RP 2100.xlsx');
+        const rutaExcel = path.join(__dirname, './public/RP 2100.xlsx');
         const datos = leerExcel(rutaExcel);
 
         const registro = datos.find((dato) => dato.LEGAJO === legajo);
@@ -44,7 +44,7 @@ router.get('/:legajo', (req, res) => {
 // Ruta para obtener los datos filtrados de chalecos
 router.get('/chalecos', (req, res) => {
     try {
-        const rutaExcel = path.join(__dirname, './Excel/RP 2100.xlsx');
+        const rutaExcel = path.join(__dirname, './public/RP 2100.xlsx');
         const datos = leerExcel(rutaExcel);
 
         // Filtrar las columnas requeridas
